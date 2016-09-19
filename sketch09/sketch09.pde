@@ -1,9 +1,12 @@
-color black = color(0);
 color white = color(255);
 color yellow = color(255, 250, 58);
 color blue = color(17, 27, 125);
 color red = color(255, 34, 62);
-color green = color(108, 187, 34);
+//----------------
+color pyellow = color(255, 255, 178);
+color pgreen = color(178, 255, 178);
+color ppink = color(255, 178, 255);
+color pblue = color(178, 255, 255);
 
 color bgCol = white;
 BarBg barBg;
@@ -19,8 +22,8 @@ void setup(){
   noStroke();
   
   colorArr = new color[2];
-  colorArr[0] = yellow;
-  colorArr[1] = red;
+  colorArr[0] = ppink;
+  colorArr[1] = pblue;
   rotateDot = new RotateDot[rotateDotNum];
   for(int i=0; i<rotateDotNum; i++){
     int dotR = (int)random(10, 30);
@@ -41,7 +44,7 @@ void draw(){
   for(int i=0; i<rotateDotNum; i++){
     rotateDot[i].update(i*(width/rotateDotNum), height/2);
   }
-  barBg.update(blue);
+  barBg.update(pgreen);
   
   gifRecord();
 }
