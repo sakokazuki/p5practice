@@ -10,6 +10,10 @@ void draw(){
   app.update();
 }
 
+void keyPressed(){
+  app.keyPressed();
+}
+
 class App{
   color _bg;
   App(){
@@ -18,5 +22,12 @@ class App{
   
   void update(){
     background(_bg);
+  }
+  
+  void keyPressed(){
+    if(key == 's'){
+      println("saveimage");
+      save("image_"+month()+day()+"_"+hour()+minute()+second()+".png");
+    }
   }
 }
