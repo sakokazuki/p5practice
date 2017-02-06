@@ -1,0 +1,25 @@
+{
+  "name": "p5practice",
+  "version": "1.0.0",
+  "description": "- GifAnimation   gifをつくるのに基本的に全ファイルでつかっている。 - Ani   Tweenライブラリ。必要であれば使っている。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakokazuki/p5practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakokazuki/p5practice/issues"
+  },
+  "homepage": "https://github.com/sakokazuki/p5practice#readme",
+  "dependencies": {
+    "imagemin": "^5.2.2",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-gifsicle": "^5.1.0",
+    "resize-image": "0.0.4"
+  }
+}
